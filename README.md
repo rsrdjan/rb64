@@ -11,6 +11,27 @@ rb64.exe [-d] [-r VALUE] -i INPUT
 
 -i      INPUT to encode/decode
 ```
+### Examples
+
+Encode - classic base64:
+```
+rb64.exe -i "Hello world"
+```
+
+Encode - base64, rotate table by 4:
+```
+rb64.exe -r 4 -i "Hello world"
+```
+
+Decode - classic base64:
+```
+rb64.exe -d -i "SGVsbG8gd29ybGQ="
+```
+
+Decode - base64, rotate table by 4:
+```
+rb64.exe -d -r 4 -i "WKZwfKAkh6B2fKU="
+```
 
 *Inspired by "Practical Malware Analysis" by Michael Sikorski and Andrew Honig*
 
